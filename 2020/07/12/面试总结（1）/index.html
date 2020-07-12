@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Hello World | Hexo</title>
+  <title>面试总结（1） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="面试总结（1）####1.SpringBoot的常用注解？ ​    SpringBoot的常用注解有： @Service：注解在类上，声明为业务层bean @Controller：注解在类上，声明为控制层bean @Repository：注解在类上，声明为数据访问层bean @Component：注解在类上，声明为一个通用bean，value不写就是默认类名 首字母小写 @bean：声明在方法上">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2020/07/11/hello-world/index.html">
+<meta property="og:title" content="面试总结（1）">
+<meta property="og:url" content="http://yoursite.com/2020/07/12/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93%EF%BC%881%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="面试总结（1）####1.SpringBoot的常用注解？ ​    SpringBoot的常用注解有： @Service：注解在类上，声明为业务层bean @Controller：注解在类上，声明为控制层bean @Repository：注解在类上，声明为数据访问层bean @Component：注解在类上，声明为一个通用bean，value不写就是默认类名 首字母小写 @bean：声明在方法上">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-07-11T15:47:43.129Z">
-<meta property="article:modified_time" content="2020-07-11T15:47:43.129Z">
+<meta property="article:published_time" content="2020-07-12T11:21:24.930Z">
+<meta property="article:modified_time" content="2020-07-12T11:21:24.944Z">
 <meta property="article:author" content="ZoomTaylor(郭儒墨)">
 <meta name="twitter:card" content="summary">
   
@@ -154,39 +154,147 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-面试总结（1）" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      面试总结（1）
     </h1>
   
 
         
-        <a href="/2020/07/11/hello-world/" class="archive-article-date">
-  	<time datetime="2020-07-11T15:47:43.129Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-11</time>
+        <a href="/2020/07/12/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93%EF%BC%881%EF%BC%89/" class="archive-article-date">
+  	<time datetime="2020-07-12T11:21:24.930Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h2 id="面试总结（1）"><a href="#面试总结（1）" class="headerlink" title="面试总结（1）"></a>面试总结（1）</h2><p>####1.SpringBoot的常用注解？</p>
+<p>​    SpringBoot的常用注解有：</p>
+<p>@Service：注解在类上，声明为业务层bean</p>
+<p>@Controller：注解在类上，声明为控制层bean</p>
+<p>@Repository：注解在类上，声明为数据访问层bean</p>
+<p>@Component：注解在类上，声明为一个通用bean，value不写就是默认类名 首字母小写</p>
+<p>@bean：声明在方法上，告诉Spring这个方法将会返回一个对象，这个对象要注册为Spring应用上下文中bean。通常方法体中包含了最终产生bean实例的逻辑。 两者的目的是一样的，都是注册bean到Spring容器中。</p>
+<p>@Autowired：按类型注入.默认属性required= true;当不能确定 Spring 容器中一定拥有某个类的Bean 时， 可以在需要自动注入该类 Bean 的地方可以使用 @Autowired(required = false)， 这等于告诉Spring：在找不到匹配Bean时也不抛出BeanCreationException 异常。@Autowired 和 @Qualifier 结合使用时，自动注入的策略就从 byType 转变byName 了。@Autowired可以对成员变量、方法以及构造函数进行注释，而 @Qualifier 的标注对象是成员变量、方法入参、构造函数入参。正是由于注释对象的不同，所以 Spring 不将 @Autowired 和 @Qualifier 统一成一个注释类。</p>
+<p>@Resource： 按名称装配</p>
+<p>@Resource默认按照名称方式进行bean匹配，@Autowired默认按照类型方式进行bean匹配</p>
+<p>@Resource(importjavax.annotation.Resource;)是J2EE的注解，@Autowired(importorg.springframework.beans.factory.annotation.Autowired;)是Spring的注解</p>
+<p>@SpringBootApplication：@SpringBootApplication=@ComponentScan+@Configuration+@EnableAutoConfiguration：约定优于配置</p>
+<p>@EnableAutoConfiguration启用 Spring 应用程序上下文的自动配置，试图猜测和配置您可能需要的bean。自动配置类通常采用基于你的classpath 和已经定义的 beans 对象进行应用。被 @EnableAutoConfiguration 注解的类所在的包有特定的意义，并且作为默认配置使用。通常推荐将 @EnableAutoConfiguration 配置在 root 包下，这样所有的子包、类都可以被查找到。</p>
+<p>@ComponentScan：注解在类上，扫描标注了@Controller等注解的类，注册为bean 。@ComponentScan 为 @Configuration注解的类配置组件扫描指令。@ComponentScan 注解会自动扫描指定包下的全部标有 @Component注解的类，并注册成bean，当然包括 @Component下的子注解@Service、@Repository、@Controller。 </p>
+<p><strong>2.SpringBoot中的Component和bean注解的区别？</strong></p>
+<p>@Component注解：表明一个类会作为组件类，并告知Spring要为这个类创建bean。</p>
+<p>@Bean注解：告诉Spring这个方法将会返回一个对象，这个对象要注册为Spring应用上下文中bean。通常方法体中包含了最终产生bean实例的逻辑。 两者的目的是一样的，都是注册bean到Spring容器中。</p>
+<p>区别：</p>
+<p>@Component（@Controller、@Service、@Repository）通常是通过类路径扫描来自动侦测以及自动装配到Spring容器中。</p>
+<p>而@Bean注解通常是我们在标有该注解的方法中定义产生这个bean的逻辑。</p>
+<p>@Component 作用于类，@Bean作用于方法。</p>
+<p>总结：</p>
+<p>@Component和@Bean都是用来注册Bean并装配到Spring容器中，但是Bean比Component的自定义性更强。可以实现一些Component实现不了的自定义加载类。</p>
+<p><strong>3.Mybatis中的嵌套查询和嵌套结果有什么区别？</strong></p>
+<p>尽管嵌套查询大量的简化了存在关联关系的查询，但它的弊端也比较明显：即所谓的N+1问题。关联的嵌套查询显示得到一个结果集，然后根据这个结果集的每一条记录进行关联查询。</p>
+<p>现在假设嵌套查询就一个（即resultMap内部就一个association标签），现查询的结果集返回条数为N，那么关联查询语句将会被执行N次，加上自身返回结果集查询1次，共需要访问数据库N+1次。如果N比较大的话，这样的数据库访问消耗是非常大的！所以使用这种嵌套语句查询的使用者一定要考虑慎重考虑，确保N值不会很大。</p>
+<p>嵌套结果查询：</p>
+<p>嵌套语句的查询会导致数据库访问次数不定，进而有可能影响专到性能。Mybatis还支持一种嵌套结果的查询：即对于一对多，多对多，多对一的情况的查询，Mybatis通过联合查询，将结果从数据库内一次性查出来，然后根据其一对多，多对一，多对多的关系和ResultMap中的配置，进行结果的转属换，构建需要的对象。</p>
+<p><strong>4.Mybatis中#和$的差别？</strong></p>
+<p> #{}是占位符，预编译处理；${}是拼接符，字符串替换，没有预编译处理。</p>
+<p> Mybatis在处理#{}时，#{}传入参数是以字符串传入，会将SQL中的#{}替换为?号，调用PreparedStatement的set方法来赋值。</p>
+<p> Mybatis在处理${}时，是原值传入，就是把{}替换成变量的值，相当于JDBC中的Statement编译</p>
+<p> 变量替换后，#{} 对应的变量自动加上单引号 ‘’；变量替换后，${} 对应的变量不会加上单引号 ‘’</p>
+<p> #{} 可以有效的防止SQL注入，提高系统安全性；${} 不能防止SQL 注入</p>
+<p><strong>5.怎样统计字符串里面每一个字符出现的次数？</strong></p>
+<p>先将字符串toCahrArray变成字符数组，然后遍历字符数组，创建一个hashmap集合，将字符数组放进集合，判断当前字符是否在集合中存在，用map.containsKey，如果存在就在value加一，不存在就put进集合value为一。</p>
+<p><strong>6.String中常用的方法？</strong></p>
+<p>.length（）:字符串长度         .indexof（）：某个字符在字符串中的位置</p>
+<p>.toCharArray（）：字符串转字符数组    .charAt（）求一个字符串中某个位置的值</p>
+<p>.equals（）：判断值是否相等</p>
+<p>replace（）：将字符串中的某些字符用别的字符替换掉。形如replace（“abc”,”ddd”）;字符串中的abc将会被ddd替换掉。</p>
+<p>split（）:根据给定正则表达式的匹配拆分此字符串。形如 String s = “The time is going quickly！”; str1=s.split(“ “);</p>
+<p>substring（）：输出一个新的字符串，它是此字符串中的子串，形如substring（3,7）；它将字符串中的第四个第五个第六个输出。</p>
+<p>trim（）：将字符串开头的空白（空格）和尾部的空白去掉。</p>
+<p>format（）:使用指定的语言环境、格式字符串和参数返回一个格式化字符串。</p>
+<p>toLowerCase（）:将字符串中所有的大写改变成小写</p>
+<p>toUpperCase（）：将字符串中所有的小写改变为大写</p>
+<p><strong>7.servlet的生命周期？</strong></p>
+<p>Servlet 生命周期可被定义为从创建直到毁灭的整个过程。以下是 Servlet 遵循的过程：</p>
+<p>Servlet 通过调用 <strong>init ()</strong> 方法进行初始化。</p>
+<p>Servlet 调用 <strong>service()</strong> 方法来处理客户端的请求。</p>
+<p>Servlet 通过调用 <strong>destroy()</strong> 方法终止（结束）。</p>
+<p>最后，Servlet 是由 JVM 的垃圾回收器进行垃圾回收的。</p>
+<p><strong>8.（前端）怎样实现一个二级联动？</strong></p>
+<p>1.实现二级联动 </p>
+<p>创建一个页面，有两个下拉选择框： </p>
+<p>(1) 在第一个下拉框里面有一个事件 ：改变事件 onchange事件 </p>
+<p>(2)方法change1(this.value);表示当前改变的option里面的value值 </p>
+<p>(3) 创建一个二维数组，存储数据 </p>
+<p>(4)每个数组中第一个元素是国家名称，后面的元素是国家里面的城市 </p>
+<p>2.步骤 ..</p>
+<p>(1)遍历二维数组 </p>
+<p>(2)得到也是一个数组 </p>
+<p>(3)拿到数组中的第一个值和传递过来的值做比较 </p>
+<p>(4)如果相同，获取到第一个值后面的元素 </p>
+<p>(5)得到city的select </p>
+<p>(6)添加过去（使用）appendChild方法 </p>
+<p>代码 ：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>HTML示例<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">"text/css"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"contry"</span> <span class="attr">onchange</span>=<span class="string">"change1(this.value)"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"0"</span>&gt;</span>--请选择--<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"中国"</span>&gt;</span>中国<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"美国"</span>&gt;</span>美国<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"德国"</span>&gt;</span>德国<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span> <span class="attr">value</span>=<span class="string">"日本"</span>&gt;</span>日本<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">"city"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"></span><br><span class="line"> <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">        <span class="comment">//创建一个数组存数数据</span></span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">        <span class="comment">//二维数组</span></span></span><br><span class="line"></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> arr = <span class="keyword">new</span> <span class="built_in">Array</span>(<span class="number">4</span>);</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">        arr[<span class="number">0</span>] = [<span class="string">"中国"</span>,<span class="string">"南京"</span>,<span class="string">"抚州"</span>,<span class="string">"石家庄"</span>,<span class="string">"西安"</span>,<span class="string">"昆明"</span>];</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">        arr[<span class="number">1</span>] = [<span class="string">"美国"</span>,<span class="string">"波士顿"</span>,<span class="string">"休斯顿"</span>,<span class="string">"底特律"</span>,<span class="string">"华盛顿"</span>,<span class="string">"纽约"</span>];</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">        arr[<span class="number">2</span>] = [<span class="string">"德国"</span>,<span class="string">"慕尼黑"</span>,<span class="string">"柏林"</span>,<span class="string">"法兰克福"</span>,<span class="string">" 多特蒙德"</span>,<span class="string">"不莱梅"</span>];</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">        arr[<span class="number">3</span>] = [<span class="string">"日本"</span>,<span class="string">"东京"</span>,<span class="string">"大阪"</span>,<span class="string">"北海道"</span>,<span class="string">"广岛"</span>,<span class="string">"长崎"</span>];</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">        <span class="function"><span class="keyword">function</span> <span class="title">change1</span><span class="params">(val)</span></span>&#123;</span></span><br><span class="line"></span><br><span class="line">            /*</span><br><span class="line"></span><br><span class="line">                1、遍历二维数组</span><br><span class="line"></span><br><span class="line">                2、得到二维数组里的每一个数组</span><br><span class="line"></span><br><span class="line">                3、拿到数组中的第一个值和传递过来的值做比较</span><br><span class="line"></span><br><span class="line">                4、如果相同，获取到第一个值后面的元素</span><br><span class="line"></span><br><span class="line">                5、得到city的select</span><br><span class="line"></span><br><span class="line">                6、添加过去（使用）appendChild方法</span><br><span class="line"></span><br><span class="line">            */</span><br><span class="line"></span><br><span class="line">            /*  </span><br><span class="line"></span><br><span class="line">                * 每次添加之前，判断一下city里面是否有option，如果有，删除</span><br><span class="line"></span><br><span class="line">            */</span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="comment">//获取id=city的select</span></span></span><br><span class="line"></span><br><span class="line"><span class="javascript">            <span class="keyword">var</span> sel2 = <span class="built_in">document</span>.getElementById(<span class="string">"city"</span>);</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="keyword">var</span> options1 = sel2.getElementsByTagName(<span class="string">"option"</span>);</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="keyword">for</span> (<span class="keyword">var</span> m=<span class="number">0</span>; m&lt;options1.length ;m++ )</span></span><br><span class="line"></span><br><span class="line">            &#123;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">                <span class="comment">//得到每一个option</span></span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">                <span class="keyword">var</span> option1 = options1[m];</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">                <span class="comment">//删除这个option 通过父节点删除</span></span></span><br><span class="line"></span><br><span class="line">                sel2.removeChild(option1);</span><br><span class="line"></span><br><span class="line">                m--;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="comment">//遍历数组</span></span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">            <span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>; i&lt;arr.length; i++)</span></span><br><span class="line"></span><br><span class="line">            &#123;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">                <span class="comment">//得到二维数组里的每一个数组</span></span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">                <span class="keyword">var</span> arri = arr[i];</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">                <span class="comment">//得到数组中的第一个值</span></span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">                <span class="keyword">var</span> firstValue = arri[<span class="number">0</span>];</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">                <span class="comment">//与传递过来的值进行判断</span></span></span><br><span class="line"></span><br><span class="line">                if(val == firstValue)</span><br><span class="line"></span><br><span class="line">                &#123;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">                    <span class="comment">//如果相同，获取到第一个值后面的元素</span></span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">                    <span class="keyword">for</span>(<span class="keyword">var</span> j=<span class="number">1</span>; j&lt;arri.length; j++)</span></span><br><span class="line"></span><br><span class="line">                    &#123;</span><br><span class="line"></span><br><span class="line"><span class="actionscript">                        <span class="comment">//得到城市名称</span></span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">                        <span class="keyword">var</span> value1 = arri[j];</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">                        <span class="comment">//创建option</span></span></span><br><span class="line"></span><br><span class="line"><span class="javascript">                        <span class="keyword">var</span> option1 = <span class="built_in">document</span>.createElement(<span class="string">"option"</span>);</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">                        <span class="comment">//创建文本</span></span></span><br><span class="line"></span><br><span class="line"><span class="javascript">                        <span class="keyword">var</span> text1= <span class="built_in">document</span>.createTextNode(value1);</span></span><br><span class="line"></span><br><span class="line"><span class="actionscript">                        <span class="comment">//把文本添加到option1里面</span></span></span><br><span class="line"></span><br><span class="line">                        option1.appendChild(text1);</span><br><span class="line"></span><br><span class="line"><span class="actionscript">                        <span class="comment">//把option1添加的select里去</span></span></span><br><span class="line"></span><br><span class="line">                        sel2.appendChild(option1);</span><br><span class="line"></span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p><strong>9.mysql中主键自增，怎样查询最后一条数据？</strong></p>
+<p>1.可以用嵌套查询，先用max函数查询最大的id再根据id查询表中数据</p>
+<p>2.可以用limit查询行数</p>
+<p><strong>10.mysql分页怎么去做的？</strong></p>
+<p>用limit （（pagenum-1）<em>pages，pagenum</em>pages）来查询分页数据</p>
+<p>现在大多数用的是pagehelper分页插件，也是非常的香啊</p>
+<p><strong>11.mysql分页查询数据量特别大，查询效率低怎样解决？</strong></p>
+<p>今年3月份时候，线上发生一次大事故。公司主要后端服务器发生宕机，所有接口超时。宕机半小时后，又自动恢复正常。但是过了2小时，又再次发生宕机。</p>
+<p>通过接口日志，发现MySQL数据库无法响应服务器。在阿里云的技术支持的帮助下，发现了MySQL数据库中存在大量慢查询，导致CPU负载过高。最后，根据慢查询日志，定位到了出问题的SQL和业务接口。</p>
+<p>业务接口是一个分页接口，莫名被刷到7000多页，偏移量（offset）高达20w多。每当这条SQL执行时，数据库CPU直接打满。查询时间超过1分钟才有响应。由于慢查询导致数据库CPU使用率爆满，其他业务的数据库请求无法得到及时响应，接口超时。最后，拖垮主服务器。</p>
+<p>1.子查询覆盖索引定位id在进行limit查询数据SELECT * FROM tbl_works WHERE id &gt;= (SELECT id FROM tbl_works limit 100000, 1) LIMIT 20               （使用id自增） </p>
+<p>2.通过自连接与join定位到目标 ids，然后再将数据取出</p>
+<p>SELECT * FROM tbl_works t1  JOIN (SELECT id from tbl_works WHERE status=1  limit 100000, 10) t2 ON t1.id = t2.id </p>
+<p><strong>12.mysql怎样分表？</strong></p>
+<p>1.做mysql集群，例如：利用mysql cluster ，mysql proxy，mysql replication，drdb等等 有人会问mysql集群，根分表有什么关系吗？虽然它不是实际意义上的分表，但是它启到了分表的作用，做集群的意义是什么呢？为一个数据库减轻负担，说白了就是减少sql排队队列中的sql的数量，举个例子：有10个sql请求，如果放在一个数据库服务器的排队队列中，他要等很长时间，如果把这10个sql请求，分配到5个数据库服务器的排队队列中，一个数据库服务器的队列中只有2个，这样等待时间是不是大大的缩短了呢？这已经很明显了。所以我把它列到了分表的范围以内，我做过一些mysql的集群： linux mysql proxy 的安装，配置，以及读写分离 mysql replication 互为主从的安装及配置，以及数据同步 优点：扩展性好，没有多个分表后的复杂操作（php代码） 缺点：单个表的数据量还是没有变，一次操作所花的时间还是那么多，硬件开销大。</p>
+<p>2.利用merge存储引擎来实现分表</p>
+<p><strong>13.jdk1.8的新特性？</strong></p>
+<ul>
+<li><strong>Lambda表达式</strong></li>
+<li><strong>函数式接口</strong></li>
+<li><strong>*方法引用和构造器调用</strong></li>
+<li><strong>Stream API</strong></li>
+</ul>
+<p>stream操作的三个步骤：</p>
+<p>1.创建stream</p>
+<p>2.中间操作（过滤、map）</p>
+<p>3.终止操作</p>
+<ul>
+<li><strong>接口中的默认方法和静态方法</strong></li>
+<li><strong>新时间日期API</strong></li>
+</ul>
+<p><strong>14.http和https的差别？</strong></p>
+<p>　HTTP协议传输的数据都是未加密的，也就是明文的，因此使用HTTP协议传输隐私信息非常不安全，为了保证这些隐私数据能加密传输，于是网景公司设计了SSL（Secure Sockets Layer）协议用于对HTTP协议传输的数据进行加密，从而就诞生了HTTPS。简单来说，HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，要比http协议安全。</p>
+<p>　　HTTPS和HTTP的区别主要如下：</p>
+<p>　　1、https协议需要到ca申请证书，一般免费证书较少，因而需要一定费用。</p>
+<p>　　2、http是超文本传输协议，信息是明文传输，https则是具有安全性的ssl加密传输协议。</p>
+<p>　　3、http和https使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。</p>
+<p>　　4、http的连接很简单，是无状态的；HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。</p>
+<p><strong>15.tcp、udp的区别？</strong></p>
+<ul>
+<li>TCP 是面向连接的，UDP 是面向无连接的</li>
+<li>UDP程序结构较简单</li>
+<li>TCP 是面向字节流的，UDP 是基于数据报的</li>
+<li>TCP 保证数据正确性，UDP 可能丢包</li>
+<li>TCP 保证数据顺序，UDP 不保证</li>
+</ul>
+<p><strong>17.http常用的状态码？</strong></p>
+<p>200 – 请求成功</p>
+<p>301 – 资源(网页等)被永久转移到其它URL</p>
+<p>404 – 请求的资源(网页等)不存在</p>
+<p>500 – 内部服务器错</p>
 
       
 
@@ -276,7 +384,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/11/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/07/12/%E9%9D%A2%E8%AF%95%E6%80%BB%E7%BB%93%EF%BC%881%EF%BC%89/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -288,20 +396,6 @@
 </article>
 
   
-<nav id="article-nav">
-  
-    <a href="/2020/07/12/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E5%8D%9A%E5%AE%A2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          我的第一个博客
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
